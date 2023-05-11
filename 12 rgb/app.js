@@ -26,5 +26,5 @@ const cambiarFondo=()=>{
     document.querySelector("#vg2").innerHTML=vg2
     document.querySelector("#vb1").innerHTML=vb1
     document.querySelector("#vb2").innerHTML=vb1
-    body.style.background= ´linear-gradient (90deg, rgba${vr1},${vg1},${vb1},1 0%, rgba(${vr2},${vg2},${vb2,1} 100%)´
+    body.style.background= 'linear-gradient (90deg, rgba${vr1},${vg1},${vb1},1 0%, rgba(${vr2},${vg2},${vb2,1} 100%)'
 }
