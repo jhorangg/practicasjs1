@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signo</title>
+</head>
+<body>
+    <center>SIGNO ZODIACAL</center>
+    <body onload="updateSliderValue()">
+        <label for="showAllMonths">Mes:</label>
+        <select id="showAllMonths" onchange="toggleMonths()">
+          <option value="1">Enero</option>
+          <option value="2">Febrero</option>
+          <option value="3">Marzo</option>
+          <option value="4">Abril</option>
+          <option value="5">Mayo</option>
+          <option value="6">Junio</option>
+          <option value="7">Julio</option>
+          <option value="8">Agosto</option>
+          <option value="9">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Diciembre</option>
+        </select>
+        <br>
+        <input type="range" id="slider" min="1" max="31" step="1" value="1" oninput="updateSliderValue()">
+        <br>
+        <label id="selectedDate"></label>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
